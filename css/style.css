@@ -1,0 +1,29 @@
+.section1 {
+  background: url('/Fullpage/images/bg1.jpg') no-repeat center;
+  background-size: 100vw auto;
+
+}
+
+.section2 {
+  background: url('/Fullpage/images/bg2.jpg') no-repeat top;
+  background-size: 100vw auto;
+
+}
+
+.section3 {
+  background: url('/Fullpage/images/bg3.jpg') no-repeat center;
+  background-size: 100vw auto;
+
+}
+
+.section4 {
+  background: url('/Fullpage/images/bg4.jpg') no-repeat top;
+  background-size: 100vw auto;
+
+}
+
+.section5 {
+  background: url('/Fullpage/images/bg5.jpg') no-repeat top;
+  background-size: 100vw auto;
+
+}
