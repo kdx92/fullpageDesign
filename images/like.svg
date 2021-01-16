@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>签到2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="80" height="80" rx="39"></rect>
+        <linearGradient x1="31.7282777%" y1="7.28194145%" x2="51.3566903%" y2="98.3334691%" id="linearGradient-3">
+            <stop stop-color="#FFCF02" offset="0%"></stop>
+            <stop stop-color="#FF7A00" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.5193201%" id="linearGradient-4">
+            <stop stop-color="#FFF7D2" offset="0%"></stop>
+            <stop stop-color="#FFC755" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="71.1102998%" id="linearGradient-5">
+            <stop stop-color="#FFCF02" offset="0%"></stop>
+            <stop stop-color="#FF7A00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="移动端_ICON" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-424.000000, -568.000000)">
+            <g id="lend_iocn_ceedu备份-2" transform="translate(424.000000, 568.000000)">
+                <rect id="Rectangle" x="0" y="0" width="80" height="80"></rect>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFECBF" opacity="0.5" style="mix-blend-mode: multiply;" xlink:href="#path-1"></use>
+                <g id="qiandao" mask="url(#mask-2)">
+                    <g transform="translate(16.000000, 13.000000)">
+                        <path d="M24,60.9987127 C24.5403752,61.0185208 25.0637627,60.808975 25.4397305,60.4222957 C26.3597722,59.4437272 48,36.8064314 48,24.0199307 C48,10.8293637 37.1808485,0 24,0 C10.8191515,0 0,10.7125482 0,24.0199307 C0,36.8064314 21.6402278,59.5011774 22.5602695,60.4222957 C22.9644719,60.8244471 23.4244927,60.9987127 24,60.9987127 Z" id="路径" stroke="none" fill="url(#linearGradient-3)" fill-rule="evenodd"></path>
+                        <circle id="椭圆形" stroke="none" fill="url(#linearGradient-4)" fill-rule="evenodd" opacity="0.498511905" cx="24" cy="24" r="17"></circle>
+                        <path d="M33.3132741,55.8766393 C30.4555108,59.4011697 28.3143598,61.7516225 27.9886269,62.1651919 C26.8854782,63.3392694 25.39145,64.0308494 23.8974217,64.0308494 C22.3853945,64.0098874 20.9408354,63.3652168 19.8713631,62.2341201 C18.0348401,60.197291 16.2590865,58.1000778 14.546716,55.9455676 C8.24921326,57.3976557 3.96256831,60.506319 3.96256831,63.8929929 C3.96256831,68.8696114 12.9223946,72.8766393 23.9625683,72.8766393 C35.002742,72.8766393 43.9625683,68.7983855 43.9625683,63.8929929 C43.8322751,60.4373908 39.5456302,57.3953581 33.3132741,55.8766393 L33.3132741,55.8766393 Z" id="路径" stroke="none" fill="url(#linearGradient-5)" fill-rule="evenodd"></path>
+                        <path d="M16,24 C16,19.5506591 19.597071,16 24,16 C28.402929,16 32,19.5978753 32,24 C32,28.4493409 28.4488423,32 24,32 C19.5511577,32 16,28.4021247 16,24 Z" id="路径" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(24.000000, 24.000000) scale(1, -1) translate(-24.000000, -24.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

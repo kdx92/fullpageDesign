@@ -5,5 +5,15 @@ $(function(){
     loopBottom: true,
     keyboardScrolling: true,
     scrollingSpeed: 400,
+ 
+
+  // 回调函数滚动到某一屏后的回调函数，接受anchorLink和index两个参数，
+  //anchorLink和index两个参数，anchorLink是锚链接的名称，index是序号，从1开始计算
+  afterLoad: function(anchorLink, index) {
+    if(index == 1) {
+      $(".like").show().animate({height: "50px", bottom: "-360px"}, 3000, "easeInOutBounce");
+      }
+    }
   });
 });
+

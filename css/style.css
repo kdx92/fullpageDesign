@@ -1,29 +1,62 @@
 .section1 {
-  background: url('/Fullpage/images/bg1.jpg') no-repeat center;
+  background: url('/images/bg1.jpg') no-repeat center;
   background-size: 100vw auto;
 
 }
 
 .section2 {
-  background: url('/Fullpage/images/bg2.jpg') no-repeat top;
+  background: url('/images/bg2.jpg') no-repeat top;
   background-size: 100vw auto;
 
 }
 
 .section3 {
-  background: url('/Fullpage/images/bg3.jpg') no-repeat center;
+  background: url('/images/bg3.jpg') no-repeat center;
   background-size: 100vw auto;
 
 }
 
 .section4 {
-  background: url('/Fullpage/images/bg4.jpg') no-repeat top;
+  background: url('/images/bg4.jpg') no-repeat top;
   background-size: 100vw auto;
 
 }
 
 .section5 {
-  background: url('/Fullpage/images/bg5.jpg') no-repeat top;
+  background: url('/images/bg5.jpg') no-repeat top;
   background-size: 100vw auto;
 
 }
+
+.info {
+  position: fixed;
+  top: 5%;
+  right: 3%;
+  text-decoration: none;
+  height: 100px;
+  width: 100px;
+  z-index: 999;
+}
+
+/* first start */
+.find {
+  width: 990px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: rgba(0, 0, 0, .3); */
+  bottom: 0;
+}
+
+.more {
+  position: relative;
+}
+.more img{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  
+}
+
+/* first end */
