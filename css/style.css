@@ -39,7 +39,7 @@
 }
 
 /* first start */
-.find {
+.find1 {
   width: 990px;
   height: 500px;
   position: absolute;
@@ -49,10 +49,10 @@
   bottom: 0;
 }
 
-.more {
+.more1 {
   position: relative;
 }
-.more img{
+.more1 img{
   width: 80px;
   height: 80px;
   position: absolute;
@@ -60,3 +60,51 @@
 }
 
 /* first end */
+
+/* second start */
+.find2 {
+  width: 990px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: rgba(0, 0, 0, .3); */
+  bottom: 50px;
+}
+
+.more2 {
+  position: relative;
+}
+.more2 img{
+  height: 50px;
+  position: absolute;
+  /* top: 0px; */
+  right: 0px;
+  bottom: -280px;
+}
+
+/* second end */
+
+/* third start */
+.find3 {
+  width: 990px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, .3);
+  bottom: 24px;
+}
+
+.more3 {
+  position: relative;
+}
+.more3 img{
+  height: 50px;
+  position: absolute;
+  /* top: 0px; */
+  right: 220px;
+  bottom: -300px;
+}
+
+/* third end */

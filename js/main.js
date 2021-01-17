@@ -11,9 +11,19 @@ $(function(){
   //anchorLink和index两个参数，anchorLink是锚链接的名称，index是序号，从1开始计算
   afterLoad: function(anchorLink, index) {
     if(index == 1) {
-      $(".like").show().animate({height: "50px", bottom: "-360px"}, 3000, "easeInOutBounce");
+      $(".like1").show().animate({height: "50px", bottom: "-360px"}, 3000, "easeInOutBounce");
       }
-    }
+      if(index == 2) {
+        $(".like2").show().animate({height: "80px"}, 1000, "easeInOutElastic");
+        }
+    
+    },
+
+
+    
+
+
+
   });
 });
 
