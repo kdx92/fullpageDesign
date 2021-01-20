@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 登录提示 -->
+  <div class="login-header"><a id="link" href="javascript:;">登录</a></div>
+
+  <!-- 登录框 -->
+  <div id="login" class="login">
+    <div id="login-title" class="login-title">
+      <span><a id="close" class="close" href="javascript:void(0);">X</a></span>
+    </div>
+    <div class="login-content">
+      <div class="login-input">
+        <label for="">用户名</label>
+        <input type="text" placeholder="请输入用户名" name="info[username]" id="username" class="username">
+      </div>
+      <div class="login-input">
+        <label for="">密码</label>
+        <input type="password" placeholder="请输入密码" name="info[password]" id="password" class="password">
+      </div>
+    </div>
+    <!-- 确认按钮 -->
+    <div id="confirm" class="confirm"><a href="javascript:void(0);" id="confirm-sign"></a></div>
+  </div>
+  <!-- 遮盖层 -->
+  <div id="cover" class="cover"></div>
+</body>
+<script src="js/login.js"></script>
+</html>
