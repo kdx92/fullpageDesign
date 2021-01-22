@@ -31,3 +31,36 @@ title.addEventListener('mousedown', function(e) {
     document.removeEventListener('mousemove', move);
   })
 })
+
+// -----------------------------------------------------------------
+// 快递单号输入内容时，上面的大号字体盒子enlarge显示出用户输入的内容
+// 表单检测用户输入：需要给表单添加键盘事件
+// 同时把快递单号里面的值（value）获取过来赋值给enlarge盒子（innerText）做为内容
+// 如果快递单号里面的内容为空，则隐藏enlarge盒子
+var enlarge = document.querySelector('.enlarge');
+var username = document.querySelector('.username');
+username.addEventListener('keyup', function() {
+  if (this.value == '') {
+    enlarge.style.display = 'none';
+  } else {
+    enlarge.style.display = 'block';
+    enlarge.innerText = this.value;
+  }
+})
+// keyup字先落到文本框，再执行程序
+// 长按持续触发使用keydown
+// keydown和keypress在文本框里面的特点：他们两个事件触发的时候，文字还没有落入文本框中
+// keyuo事件触发的时候，文字已经落入文本框里面了
+// keypress不识别功能键，所以删除的时候，删不了enlarge中的内容
+
+// 当输入框失去焦点的时候，就隐藏enlarge盒子
+username.addEventListener('blur', function() {
+  enlarge.style.display = 'none';
+})
+
+// 当输入框获得焦点的时候，就显示enlarge盒子
+username.addEventListener('focus', function() {
+  if (this.value != '') {
+    enlarge.style.display = 'block';
+  }
+})
