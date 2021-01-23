@@ -64,3 +64,13 @@ username.addEventListener('focus', function() {
     enlarge.style.display = 'block';
   }
 })
+
+// 换背景
+// 1.获取元素
+var imgs = document.querySelector('.choose').querySelectorAll('img');
+// 2.循环注册事件
+for (var i = 0; i < imgs.length; i++) {
+  imgs[i].onclick = function() {
+    document.querySelector('.login-header').style.backgroundImage = 'url(' + this.src + ')';
+  }
+}

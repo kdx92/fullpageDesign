@@ -66,3 +66,45 @@ a {
   background: #fff;
   border-radius: 50%;
 }
+
+/* 更换背景 */
+/* body {
+  
+
+  
+} */
+.login-header {
+  width: 100vw;
+  height: 100vh;
+  background:  url(../images/bgp1.jpg) no-repeat center;
+  background-size: 100vw auto;
+}
+
+.choose img {
+  width: 100px;
+  height: 70px;
+  
+} 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.choose {
+  overflow: hidden;
+  margin: 50px auto;
+  background-color: #fff;
+  width: 510px;
+  padding-top: 3px;
+}
+
+.choose li {
+  float: left;
+  margin: 0 1px;
+  cursor: pointer;
+}
+
