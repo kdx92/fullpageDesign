@@ -108,3 +108,26 @@ li {
   cursor: pointer;
 }
 
+/* 密码输入框的判断 */
+.login-input {
+  width: 500px;
+  margin: 30px auto;
+}
+.message {
+  display: inline-block;
+  font-size: 12px;
+  color: #999;
+  background: url(../images/mess.png) no-repeat left center;
+  padding-left: 20px;
+
+}
+
+.wrong {
+  color: red;
+  background-image: url(../images/wrong.png);
+}
+
+.right {
+  color: #8CD232;
+  background-image: url(../images/right.png);
+}

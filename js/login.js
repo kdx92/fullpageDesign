@@ -74,3 +74,23 @@ for (var i = 0; i < imgs.length; i++) {
     document.querySelector('.login-header').style.backgroundImage = 'url(' + this.src + ')';
   }
 }
+
+// 密码框提示
+// 首先判断的事件是表单失去焦点 onblur
+// 如果输入正确则提示正确的信息，小图标变为绿色
+// 如果输入不是6到16位，则提示错误信息，图标颜色为红色
+// 因为里面变化样式较多，则采取className修改样式
+// 1.获取元素
+var password = document.querySelector('.password');
+var message = document.querySelector('.message');
+// 2.注册事件，失去焦点
+password.onblur = function() {
+  // 用户输入的密码长度password.value.length
+  if (this.value.length < 6 || this.value.length > 16) {
+    message.className = 'message wrong';
+    message.innerHTML = '您输入的位数不是6~16位';
+  } else {
+    message.className = 'message right';
+    message.innerHTML = '输入正确';
+  }
+}
