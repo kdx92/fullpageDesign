@@ -1,3 +1,32 @@
+/* 导航栏 */
+.nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: #84C7C1;
+  
+}
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 10vh;
+  font-size: 18px;
+  margin-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+
+  display: inline-block;
+  
+}
+
+.nav a:hover {
+  background: #26A69A;
+}
+
+
+
+
+/* 弹出的登录框 */
 .login {
   display: none;
   width: 512px;
@@ -10,6 +39,16 @@
   z-index: 999;
   transform: translate(-50%, -50%);
 }
+.login-title {
+  height: 50px;
+  /* background: #000; */
+  color: #BDBDBD;
+  line-height: 50px;
+  font-size: 20px;
+  /* align-items: center; */
+  /* align-content: center; */
+  text-align: center;
+}
 
 .cover {
   display: none;
@@ -21,7 +60,7 @@
   background: rgba(0, 0, 0, .3);
 }
 
-a {
+.login a {
   text-decoration: none;
   color: #000;
 }
@@ -68,14 +107,10 @@ a {
 }
 
 /* 更换背景 */
-/* body {
-  
 
-  
-} */
 .login-header {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background:  url(../images/bgp1.jpg) no-repeat center;
   background-size: 100vw auto;
 }
@@ -96,10 +131,11 @@ li {
 
 .choose {
   overflow: hidden;
-  margin: 50px auto;
+  margin: 10px auto;
   background-color: #fff;
   width: 510px;
   padding-top: 3px;
+  display: none;
 }
 
 .choose li {

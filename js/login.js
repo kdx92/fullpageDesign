@@ -65,10 +65,16 @@ username.addEventListener('focus', function() {
   }
 })
 
-// 换背景
+// 换背景+导航栏显示更换背景选项
 // 1.获取元素
+var choose = document.querySelector('.choose');
 var imgs = document.querySelector('.choose').querySelectorAll('img');
-// 2.循环注册事件
+var picHover = document.querySelector('.picHover');
+// 2.1鼠标悬浮并显示图片
+picHover.addEventListener('click', function() {
+  choose.style.display = 'block';
+})
+// 2.2循环注册事件
 for (var i = 0; i < imgs.length; i++) {
   imgs[i].onclick = function() {
     document.querySelector('.login-header').style.backgroundImage = 'url(' + this.src + ')';
@@ -94,3 +100,5 @@ password.onblur = function() {
     message.innerHTML = '输入正确';
   }
 }
+
+
