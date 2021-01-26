@@ -88,17 +88,31 @@ for (var i = 0; i < imgs.length; i++) {
 // 因为里面变化样式较多，则采取className修改样式
 // 1.获取元素
 var password = document.querySelector('.password');
-var message = document.querySelector('.message');
+var message2 = document.querySelector('.message2');
 // 2.注册事件，失去焦点
 password.onblur = function() {
   // 用户输入的密码长度password.value.length
   if (this.value.length < 6 || this.value.length > 16) {
-    message.className = 'message wrong';
-    message.innerHTML = '您输入的位数不是6~16位';
+    message2.className = 'message2 wrong';
+    message2.innerHTML = '您输入的位数不是6~16位';
   } else {
-    message.className = 'message right';
-    message.innerHTML = '输入正确';
+    message2.className = 'message2 right';
+    // message2.innerHTML = '输入正确';
   }
 }
 
 
+// 用户名提示
+var username = document.querySelector('.username');
+var message1 = document.querySelector('.message1');
+// 用户跳过用户名输入框时出现提示
+username.onblur = function() {
+  // 用户输入的用户名长度username.value.length
+  if (this.value.length < 1) {
+    message1.className = 'message2 wrong';
+    message1.innerHTML = '请输入用户名';
+  } else {
+    message1.className = 'message2 right';
+    // message1.innerHTML = 'OK';
+  }
+}

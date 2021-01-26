@@ -68,8 +68,10 @@
 .enlarge {
   display: none;
   position: absolute;
-  top: -40px;
+  top: 50px;
   width: 171px;
+  left: 130px;
+
   border: 1px solid rgba(0, 0, 0, .2);
   box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
   padding: 5px 0;
@@ -90,10 +92,11 @@
   border-style: solid dashed dashed;
   border-color: #fff transparent transparent;
 }
+/* 按钮 */
 .confirm {
   width: 50%;
   line-height: 40px;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -105,6 +108,8 @@
   background: #fff;
   border-radius: 50%;
 }
+
+
 
 /* 更换背景 */
 
@@ -132,7 +137,8 @@ li {
 .choose {
   overflow: hidden;
   margin: 10px auto;
-  background-color: #fff;
+  /* background-color: #fff; */
+  /* 为什么没有显示背景 */
   width: 510px;
   padding-top: 3px;
   display: none;
@@ -147,9 +153,26 @@ li {
 /* 密码输入框的判断 */
 .login-input {
   width: 500px;
-  margin: 30px auto;
+  margin: 40px auto;
 }
-.message {
+.login-input label {
+  display: inline-block;
+  width: 60px;
+  /* height: ; */
+  font-size: 18px;
+  color: #8f8e8e;
+  margin-left: 80px;
+}
+.login-input input {
+  margin-left: 5px;
+  /* border: ; */
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: thick double  #8f8e8e;
+}
+.message2 {
   display: inline-block;
   font-size: 12px;
   color: #999;
@@ -166,4 +189,19 @@ li {
 .right {
   color: #8CD232;
   background-image: url(../images/right.png);
+}
+/* 用户名输入框的判断 */
+/* .message1 {
+  display: inline-block none;
+  font-size: 12px;
+  color: #999;
+  background: url(../images/mess.png) no-repeat left center;
+  padding-left: 20px;
+
+} */
+
+.message1 {
+  display: none;
+
+
 }
