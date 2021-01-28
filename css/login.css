@@ -38,6 +38,7 @@
   background: #fff;
   z-index: 999;
   transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 8px 5px rgba(0, 0, 0, .2);
 }
 .login-title {
   height: 50px;
@@ -102,6 +103,8 @@
   margin-left: auto;
   margin-right: auto;
 /* padding: 0px 120px; */
+  outline: none;
+
   
 
 }
@@ -115,14 +118,24 @@
   line-height: 35px;
   outline: none;
 }
-.close img{
+/* .close img{
   position: absolute;
   height: 50px;
   right: -16px;
   top: -20px;
   background: #fff;
   border-radius: 50%;
+} */
+.close p{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  right: -16px;
+  top: -20px;
+  background: #fff;
+  border-radius: 50%;
 }
+/* 按钮动画 */
 .waves-effect {
   position: relative;
   cursor: pointer;
@@ -138,8 +151,7 @@
   will-change: opacity, transform;
   transition: .3s ease-out;
 }
-
-.waves-effect .waves-ripple {
+ .waves-effect .waves-ripple {
   position: absolute;
   border-radius: 50%;
   width: 20px;
@@ -155,7 +167,7 @@
   -webkit-transform: scale(0);
           transform: scale(0);
   pointer-events: none;
-}
+} 
 
 .waves-effect.waves-light .waves-ripple {
   background-color: rgba(255, 255, 255, 0.45);
@@ -223,6 +235,9 @@ li {
   border-left: none;
   border-right: none;
   border-bottom: thick double  #8f8e8e;
+}
+.login-input input:focus {
+  border-bottom: thick double #6ecec6;
 }
 .message2 {
   display: inline-block;
