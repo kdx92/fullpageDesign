@@ -516,3 +516,30 @@ username.onblur = function() {
     }, 20);
   }
 };
+
+
+// 正则表达式验证手机号
+// 手机号11位且以1开头
+window.onload = function() {
+  var regtel = /^1[3|4|5|6|7|8]\d{9}$/;
+  var regqq = /^[1-9]\d{4,}$/; //从10000开始
+  var tel = document.querySelector('#tel');
+  var qq = document.querySelector('#qq');
+  regexp(tel, regtel);
+  regexp(qq, regqq);
+  function regexp(ele, reg) {
+    ele.onblur = function() {
+      if (reg.test(this.value)) {
+        // console.log('正确的');
+        this.nextElementSibling.className = 'right';
+        this.nextElementSibling.innerHTML = '<i class = "success_icon"></i>正确';
+      } else {
+        // console.log('不正确');
+        this.nextElementSibling.className = 'wrong';
+        this.nextElementSibling.innerHTML = '<i class = "error_icon"></i>不正确';
+      }
+    }
+  }
+}
+// input
+// span class = ""
