@@ -1,0 +1,60 @@
+body {
+  background: #000;
+  color: #fff;
+}
+
+.shape {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shape .introd {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.shape:hover span {
+  background: none;
+  border: 2px solid white;
+}
+.shape span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(132, 199, 193, .6);
+}
+
+.shape span:nth-child(1) {
+  border-radius: 29% 60% 80% 90% / 92% 50% 25% 80%;
+  animation: roll 6s linear infinite;
+}
+
+.shape span:nth-child(2) {
+  border-radius: 62% 90% 10% 30% / 85% 90% 65% 70%;
+  animation: roll2 7s linear infinite;
+}
+/* 左上、右上、右下、左下 */
+.shape span:nth-child(3) {
+  border-radius: 60% 30% 70% 50% / 40% 20% 75% 20%;
+  animation: roll 9s linear infinite;
+}
+ @keyframes roll {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes roll2 {
+  100% {
+    transform: rotateZ(-360deg);
+  }
+} 
