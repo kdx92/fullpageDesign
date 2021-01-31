@@ -65,6 +65,52 @@
   text-decoration: none;
   color: #000;
 }
+/* 输入框下划线 */
+/* .underline {
+  position: absolute;
+  bottom: 164px;
+  height: 2px;
+  width: 190px;
+  left: 154px;
+} */
+/* .underline1 {
+  position: absolute;
+  bottom: 164px;
+  height: 2px;
+  width: 190px;
+  left: 154px;
+}
+
+.underline1:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #84C7C1;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.underline2 {
+  position: absolute;
+  bottom: 98px;
+  height: 2px;
+  width: 190px;
+  left: 154px;
+}
+.underline2::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #84C7C1;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.username:focus ~ .underline1:before,
+.username:valid ~ .underline1:before {
+  transform: scaleX(1);
+} */
+/* 放大 */
 
 .enlarge {
   display: none;
@@ -228,17 +274,24 @@ li {
   margin-left: 80px;
 }
 .login-input input {
-  margin-left: 5px;
+  margin-left: 4px;
   /* border: ; */
   outline: none;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: thick double  #8f8e8e;
+  /* border-bottom: thick double  #8f8e8e; */
+  border-bottom: 2px solid silver;
+  padding: 3px;
+  width: 180px;
 }
-.login-input input:focus {
+
+/* .login-input input:focus ~ label {
+  transform: translateY(-20px);
+} */
+/* .login-input input:focus {
   border-bottom: thick double #6ecec6;
-}
+} */
 .message2 {
   display: inline-block;
   font-size: 12px;
